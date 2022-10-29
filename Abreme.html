@@ -7,9 +7,22 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         body {
-            background-color: pink;
-            
+            background-color: black;
         }
+        video{
+            position: absolute;
+            top: 50px;
+            left: 0; 
+            width: 100%;
+            /*height: 100%;*/
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        h3{
+            color: white;
+        }
+
     </style>
     <script>
         function accionParaCuandoEllaDigaQueSi(){
@@ -33,12 +46,13 @@
 </head>
 <body>
     <div class="video1">
-        <video muted autoplay loop>
+        <video autoplay loop>
             <source src="./video/85a9e330fa355cea40d9f9acb259dc61.mp4" type="video/mp4">
         </video>
     </div>
-    <h3>¿Quieres ser mi novia?</h3>
+    <h3>¿Aceptas?</h3>
     <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
     <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+
 </body>
 </html>
